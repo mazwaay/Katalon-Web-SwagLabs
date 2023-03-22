@@ -1,0 +1,48 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login,Chrome 111.0.0.0,,,2023-03-21 14:06:18,2023-03-21 14:07:01,42.949s,PASSED
+,,,,,,,
+Test Cases/test_Login/Login using standard user,Chrome 111.0.0.0,,,2023-03-21 14:06:18,2023-03-21 14:06:29,11.223s,PASSED
+"openBrowser("""")",Chrome 111.0.0.0,,,2023-03-21 14:06:19,2023-03-21 14:06:22,3.304s,PASSED
+maximizeWindow(),Chrome 111.0.0.0,,,2023-03-21 14:06:22,2023-03-21 14:06:22,0.184s,PASSED
+navigateToUrl(Website),Chrome 111.0.0.0,,,2023-03-21 14:06:22,2023-03-21 14:06:24,1.740s,PASSED
+"setText(findTestObject(""Login_pages/input_userName""), Standard_user)",Chrome 111.0.0.0,,,2023-03-21 14:06:24,2023-03-21 14:06:25,0.833s,PASSED
+"setText(findTestObject(""Login_pages/input_userPassword""), Password)",Chrome 111.0.0.0,,,2023-03-21 14:06:25,2023-03-21 14:06:25,0.764s,PASSED
+"click(findTestObject(""Login_pages/loginButton""))",Chrome 111.0.0.0,,,2023-03-21 14:06:25,2023-03-21 14:06:26,0.532s,PASSED
+delay(2),Chrome 111.0.0.0,,,2023-03-21 14:06:26,2023-03-21 14:06:28,2.064s,PASSED
+"takeScreenshot(""standard_user.png"")",Chrome 111.0.0.0,,,2023-03-21 14:06:28,2023-03-21 14:06:28,0.520s,PASSED
+closeBrowser(),Chrome 111.0.0.0,,,2023-03-21 14:06:28,2023-03-21 14:06:29,0.698s,PASSED
+,,,,,,,
+Test Cases/test_Login/Login using locked user,Chrome 111.0.0.0,,,2023-03-21 14:06:29,2023-03-21 14:06:38,8.824s,PASSED
+"openBrowser("""")",Chrome 111.0.0.0,,,2023-03-21 14:06:30,2023-03-21 14:06:31,1.315s,PASSED
+maximizeWindow(),Chrome 111.0.0.0,,,2023-03-21 14:06:31,2023-03-21 14:06:31,0.142s,PASSED
+navigateToUrl(Website),Chrome 111.0.0.0,,,2023-03-21 14:06:31,2023-03-21 14:06:32,1.435s,PASSED
+"setText(findTestObject(""Login_pages/input_userName""), Locked_out_user)",Chrome 111.0.0.0,,,2023-03-21 14:06:32,2023-03-21 14:06:33,0.753s,PASSED
+"setText(findTestObject(""Login_pages/input_userPassword""), Password)",Chrome 111.0.0.0,,,2023-03-21 14:06:33,2023-03-21 14:06:34,0.766s,PASSED
+"click(findTestObject(""Login_pages/loginButton""))",Chrome 111.0.0.0,,,2023-03-21 14:06:34,2023-03-21 14:06:34,0.444s,PASSED
+"verifyElementText(findTestObject(""Login_pages/errorMessage""), ""Epic sadface: Sorry, this user has been locked out."")",Chrome 111.0.0.0,,,2023-03-21 14:06:34,2023-03-21 14:06:35,0.496s,PASSED
+delay(2),Chrome 111.0.0.0,,,2023-03-21 14:06:35,2023-03-21 14:06:37,2.016s,PASSED
+"takeScreenshot(""locked_user.png"")",Chrome 111.0.0.0,,,2023-03-21 14:06:37,2023-03-21 14:06:37,0.366s,PASSED
+closeBrowser(),Chrome 111.0.0.0,,,2023-03-21 14:06:37,2023-03-21 14:06:38,0.679s,PASSED
+,,,,,,,
+Test Cases/test_Login/Login using problem user,Chrome 111.0.0.0,,,2023-03-21 14:06:38,2023-03-21 14:06:51,12.816s,PASSED
+"openBrowser("""")",Chrome 111.0.0.0,,,2023-03-21 14:06:38,2023-03-21 14:06:40,1.297s,PASSED
+maximizeWindow(),Chrome 111.0.0.0,,,2023-03-21 14:06:40,2023-03-21 14:06:40,0.144s,PASSED
+navigateToUrl(Website),Chrome 111.0.0.0,,,2023-03-21 14:06:40,2023-03-21 14:06:43,2.636s,PASSED
+"setText(findTestObject(""Login_pages/input_userName""), Performance_glitch_user)",Chrome 111.0.0.0,,,2023-03-21 14:06:43,2023-03-21 14:06:43,0.779s,PASSED
+"setText(findTestObject(""Login_pages/input_userPassword""), Password)",Chrome 111.0.0.0,,,2023-03-21 14:06:43,2023-03-21 14:06:44,0.746s,PASSED
+"click(findTestObject(""Login_pages/loginButton""))",Chrome 111.0.0.0,,,2023-03-21 14:06:44,2023-03-21 14:06:50,5.492s,PASSED
+waitForPageLoad(2),Chrome 111.0.0.0,,,2023-03-21 14:06:50,2023-03-21 14:06:50,0.213s,PASSED
+"takeScreenshot(""performance_user.png"")",Chrome 111.0.0.0,,,2023-03-21 14:06:50,2023-03-21 14:06:50,0.417s,PASSED
+closeBrowser(),Chrome 111.0.0.0,,,2023-03-21 14:06:50,2023-03-21 14:06:51,0.674s,PASSED
+,,,,,,,
+Test Cases/test_Login/Login using performance user,Chrome 111.0.0.0,,,2023-03-21 14:06:51,2023-03-21 14:07:01,9.687s,PASSED
+"openBrowser("""")",Chrome 111.0.0.0,,,2023-03-21 14:06:51,2023-03-21 14:06:53,1.323s,PASSED
+maximizeWindow(),Chrome 111.0.0.0,,,2023-03-21 14:06:53,2023-03-21 14:06:53,0.142s,PASSED
+navigateToUrl(Website),Chrome 111.0.0.0,,,2023-03-21 14:06:53,2023-03-21 14:06:54,1.467s,PASSED
+"setText(findTestObject(""Login_pages/input_userName""), Problem_user)",Chrome 111.0.0.0,,,2023-03-21 14:06:54,2023-03-21 14:06:55,0.764s,PASSED
+"setText(findTestObject(""Login_pages/input_userPassword""), Password)",Chrome 111.0.0.0,,,2023-03-21 14:06:55,2023-03-21 14:06:56,0.740s,PASSED
+"click(findTestObject(""Login_pages/loginButton""))",Chrome 111.0.0.0,,,2023-03-21 14:06:56,2023-03-21 14:06:56,0.498s,PASSED
+"verifyImagePresent(findTestObject(""Product_pages/imgError""))",Chrome 111.0.0.0,,,2023-03-21 14:06:56,2023-03-21 14:06:57,1.208s,PASSED
+delay(2),Chrome 111.0.0.0,,,2023-03-21 14:06:57,2023-03-21 14:06:59,2.018s,PASSED
+"takeScreenshot(""problem_user.png"")",Chrome 111.0.0.0,,,2023-03-21 14:06:59,2023-03-21 14:07:00,0.433s,PASSED
+closeBrowser(),Chrome 111.0.0.0,,,2023-03-21 14:07:00,2023-03-21 14:07:01,0.674s,PASSED
